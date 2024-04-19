@@ -92,13 +92,13 @@ variable "Public_sub3" {
 }
 
 variable "Private_sub1" {
-  default = "172.22.1.0/24"
+  default = "172.21.4.0/24"
 }
 
 variable "Private_sub2" {
-  default = "172.22.2.0/24"
+  default = "172.21.5.0/24"
 }
 
 variable "Private_sub3" {
-  default = "172.22.3.0/24"
+  default = "172.21.6.0/24"
 }

@@ -1,5 +1,5 @@
-module "vpc_example_complete" {
-  source  = "terraform-aws-modules/vpc/aws//examples/complete"
+module "vpc" {
+  source  = "terraform-aws-modules/vpc/aws"
   version = "5.7.1"
 
   name = var.VPC_NAME
@@ -10,11 +10,11 @@ module "vpc_example_complete" {
   public_subnets  = [var.Public_sub1, var.Public_sub2, var.Public_sub3]
 
   enable_nat_gateway = true
-  single_nat_gateway  = true
+  single_nat_gateway = true
 
   tags = {
-    terrafrom = "True"
-    Author = "Paata Kaldani"
+    terrafrom  = "True"
+    Author     = "Paata Kaldani"
     Enviroment = "Prod"
   }
 }
